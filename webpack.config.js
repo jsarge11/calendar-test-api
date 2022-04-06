@@ -38,7 +38,7 @@ module.exports = {
 		static: path.resolve(__dirname, 'dist'),
 		proxy: {
 			'/': {
-				target: 'http://localhost:5050',
+				target: 'http://localhost:9000',
 			},
 		},
 	},

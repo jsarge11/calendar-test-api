@@ -9,12 +9,12 @@ export const Main = () => {
 		axios
 			.get('/test')
 			.then((res) => {
-				alert(res.data);
+				console.log(res.data);
 			})
-			.catch(() => {
-				alert('Call to server failed, fool!');
+			.catch((error) => {
+				console.log(error);
 			});
 	}, []);
 
-	return <h1 className="main">And we're still kickin' ass!</h1>;
+	return <h1 className="main">Check the console</h1>;
 };
